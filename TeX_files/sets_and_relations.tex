@@ -1,0 +1,57 @@
+\chapter{Sets and Relations}
+\section{Sets}
+A set is $\underline{not}$ originally ordered, so:
+\[ \{a , b\} = \{b, a\} \]
+But sets $\underline{can}$ be ordered under various schemes described below.
+\section{Classes and Collections}
+\begin{defn}[Class]
+	A set consisting of elements that are themselves sets. Sometimes said to be a collection of sets.
+\end{defn}
+\begin{defn}[Collections]
+	A set consisting of sets. Often used in topology instead of the word class.
+\end{defn}
+
+\section{Ordered Pairs}
+\begin{defn}[Ordered Pair]
+	Encodes the order of elements in a set $x, y \in A$:
+	\[ (x, y) = \{ \{ x \}, \; \{ x, y \} \} \]
+	Sometimes denoted:
+	\[ \langle x, y \rangle = \{ \{ x \}, \; \{x, y\} \} \]
+\end{defn}
+The above comes from Kazimierz Kuratowski in 1921. Amazing how recent things are.
+
+\section{Relations}
+\begin{defn}[Relation]
+	A set whose elements are ordered pairs. \\
+	
+	e.g. $A \times B = \{ (x, y) \mid x \in A \; \; y \in B \}$
+\end{defn}
+
+\subsection{Ordering Relation}
+\begin{defn}[Less Than Relation]
+	\[ < (x, y)  = \{ (x, y) \mid \text{x is less than y} \} \]
+\end{defn}
+This is universally shortened to $x < y$ given it is a binary operator and used so much.
+\subsection{Cartesian Products}
+\begin{defn}[Cartesian Product $A \times B$]
+	The collection/class of all ordered pairs between two sets:
+	\[ A \times B = \{ (x, y) \mid x \in A \; \; \; y \in B \} \]
+\end{defn}
+\subsection{N-ary Ordered Pairs}
+\begin{defn}[N Ordered Pairs]
+	A relation that encodes the order of the n elements, n=4 shown:
+	\[ (x, y, w, z) = (((x, y), w), z)  \]
+\end{defn}
+\subsection{Function}
+\begin{defn}[Function]
+	A relation that has one-to-one correspondence between elements of the domain and the range.
+\end{defn}
+\subsection{Equivalence Relation}
+A relation denoted:
+\[ a \sim b \]
+that satisfies three properties of being:
+\begin{enumerate}
+	\item Reflexive
+	\item Symmetric
+	\item Transitive
+\end{enumerate}

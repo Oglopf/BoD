@@ -1,0 +1,94 @@
+\chapter{Groups}
+
+\section{Groups}
+Except for first defn, note that $G$ will stand for a group and not a set unless stated otherwise.
+\begin{defn}[Group]
+	Ordered pair $(G, \star)$ with $G \not = \emptyset $ and binary operation $\star$  such that:
+	\begin{enumerate}
+		\item (\textbf{$\star$ Associative}) $\forall a,b,c \in G$ and $\star$ :
+		\[(a \star b) \star c = a \star (b \star c) \]
+		\item (\textbf{Identity Exists}) $\exists!$ ${e}_{id} \in G$ such that:
+		\[a \star {e}_{id} = {e}_{id} \star a =  a \]
+		\item (\textbf{Inverses Exist}) $\forall a \in G$, $\exists {a}^{-1}$ such that: 
+		\[ a\star{a}^{-1} = {a}^{-1}\star a = {e}_{id} \] 
+	\end{enumerate}
+\end{defn}
+
+\begin{defn}[Abelian Group]
+	Any group $G$ such that:
+	\[\forall a, b \in G\]
+	\[a \star b = b \star a\]	
+\end{defn}
+
+\begin{defn}[Finite Group]
+	Any group with finite set $G$.
+\end{defn}
+
+\begin{defn}[Finite Order of Group Elements]
+	Smallest $n \in \mathbb{N}$ with $x \in G$ such that:
+	\[{x}^{n} = 1\]
+	The order of $x$ is finite and written:
+	\[|x| = n\]
+\end{defn}
+
+\begin{defn}[Infinite Order of Group Elements]
+	If $n \not \in \mathbb{N}$ such that:
+	\[{x}^{n} = 1\]
+	The order is infinite and written:
+	\[|x| = \infty \]
+\end{defn}
+
+\begin{defn}[Group and Multiplication Table]
+	Let $G = \{{g}_{1}, {g}_{2},...,{g}_{n}\}$ and ${g}_{1} = 1$. Then the $n \times n$ matrix with entries $i, j$ are the group elements ${g}_{i}{g}_{j}$
+\end{defn}
+
+\section{Subgroups}
+\begin{defn}[Subgroup]
+	If $S \subseteq G$ and:
+	\begin{enumerate}
+		\item $S \not = \emptyset$
+		\item $S$ closed under products.
+		\item $S$ closed under inverses.
+	\end{enumerate}
+	Then $S$ is a subgroup and written $S \leq G$
+\end{defn}
+
+\begin{prop}[Subgroup Criterion]
+	If $S \subseteq G$ then $S \leq G$ iff:
+	\begin{enumerate}
+		\item $S \not = \emptyset$
+		\item $ \forall x, y \in S$, $x{y}^{-1} \in S$
+	\end{enumerate}
+	Note: if $|S| = n$ only check $S \not = \emptyset$ and closed under multiplication.
+\end{prop}
+
+\section{Homomorphisms and Isomorphisms}
+\begin{defn}[Homomorphism]
+	Any map $\varphi: G \to H $ with groups $(G, \star)$ and $(H, \bullet)$ such that:
+	\[\forall x, y \in G\]
+	\[\varphi(x \star y) = \varphi(x)\bullet\varphi(y) \]
+\end{defn}
+If the group operations for $G$ and $H$ aren't written explicitly, which is often the case, this simply becomes:
+\begin{defn}
+	Any map $\varphi: G \to H$ between groups $G$ and $H$ such that:
+	\[ \forall x, y \in G \]
+	\[ \varphi(xy) = \varphi(x) \varphi(y) \]
+	With xy computed in G and $\varphi(x) \varphi(y)$ computed in H.
+\end{defn}
+A map $\varphi$ is in general a homomorphism if it respects the group structures of its domain and codomain.
+
+\begin{defn}[Isomorphism]
+	If the map $\varphi: G \to H$ is:
+	\begin{enumerate}
+		\item Homomorphic.
+		\item Bijective.
+	\end{enumerate}
+Then $G$ and $H$ are isomorphic and written:
+\[G \cong H\]
+\end{defn}
+
+\begin{defn}[Kernel of the Group Homomorphism]
+	The set of elements from the domain that map to the identity in the range. \\
+	
+	i.e. The fiber over the identity element in $H$.
+\end{defn}

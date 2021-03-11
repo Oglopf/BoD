@@ -1,0 +1,84 @@
+\chapter{Group Actions}
+\underline{Assume}: $s \in S$ is a set; $G = (G, \star)$ is a group. \\
+Identity element under $\star$ in $G$: ${g}_{id, \star} = 1$
+\section{Group Action}
+\begin{defn}[Group Action of $G$ on $S$]
+	A map $G \times S \to S$ satisfying:
+	\[\forall {g}_{1}, {g}_{2} \in G \; \; \; \forall s \in S\]
+	\begin{enumerate}
+		\item $ {g}_{1}  ( {g}_{2}  s ) = ( {g}_{1} \star {g}_{2} ) s $
+		\item $ 1s = s$ 
+	\end{enumerate}
+Every element of the group acts as a permutation on the set. Many different actions of a group G on a given set S can be constructed.
+\end{defn}
+
+\section{Centralizers, Centers, and Normalizers}
+\begin{defn}[Centralizer of $S$ in $G$]
+	Set of elements of G which commute with every element of S.
+	\[ {C}_{G}(S) = \{g \in G \mid g  s  {g}^{-1} = s;  \;\; \forall s \in S \}\]
+\end{defn}
+\begin{defn}[Normalizer of $S$ in $G$]
+	Set of elements and their inverses from G such that when applied together to a set S they return the set S.
+	\[{N}_{G}(S) = \{g \in G \mid gS{g}^{-1} = S\}\]
+	The centralizer is a subgroup of the normalizer:
+	\[{C}_{G}(S) \leq {N}_{G}(S)\]
+\end{defn}
+\begin{defn}[Center of $G$]
+	Set of elements commuting with every element of $G$.
+	\[Z(G) = \{g \in G \mid gx = xg;  \;\; \forall x \in G\}\]
+\end{defn}
+
+
+\section{Stabilizers and Kernels}
+\begin{defn}[Stabilizer of $s$ in $G$]
+	Set of group elements that act on an element of the set and return the same set element:
+	\[{G}_{s} = \{g \in G \mid g s = s\}\]
+	i.e. the set of group elements that act trivially on some element of the set.
+\end{defn}
+\begin{defn}[Kernel of the Action]
+	Set of group elements that act on every element of the set and return that same set element. (could be identity map).
+	\[ {A}_{ker\varphi} = \{g \in G \mid g s = s;  \;\; \forall s \in S\}\]
+	i.e. The set of group elements that act trivially on all elements of the set.
+\end{defn}
+\begin{defn}[Faithful action]
+	If an action's kernel is the identity. Any action with more elements than just the identity is \underline{not} faithful.
+\end{defn}
+
+\section{Orbits}
+\underline{Assume}: $\mathcal O$ is the symbol for a set of orbits, meaning a set with one or more elements that are what the set element can get mapped to. \\ 
+
+So $x \in \mathcal O$ just means that some element under the group permutation gets mapped to that $x$.
+\begin{defn}[Orbit of $s$ in $G$]
+	The set of elements that a single element $s \in S$ maps to under the various permutations $g \in G$ of the group under the action.
+	\[\{ga \mid g \in G\}\]
+	i.e. All the places $s \in S$ can "go" under all the allowed symmetries of the group $G$.
+\end{defn}
+\begin{defn}[Transitive Orbit]
+	If $s \in S$ only maps to one element under $g \in G$.
+\end{defn}
+
+\subsection{Conjugacy Classes of $G$}
+\begin{defn}[Conjugacy Classes of G]
+	The orbits $\mathcal O$ of G acting on itself by conjugation.
+\end{defn}
+
+\subsection{Conjugation}
+\underline{Assume}: $G$ is acting on itself.
+\begin{defn}[Conjugate elements in $G$]
+	If two group elements $a, b \in G$ have an associated element $g \in G$ such that:
+	\[b = ga{g}^{-1} \]
+	i.e. iff they are in the same orbit of G acting on itself by conjugation.
+\end{defn}
+\begin{defn}[Conjugate Sets in $G$]
+	two subsets, $T \subseteq G$ and $S \subseteq G$ are conjugate if there is some $g \in G$ such that:
+	\[ T = gS{g}^{-1} \] 
+	i.e. iff they are in the same orbit of G acting on its subsets by conjugation.
+\end{defn}
+
+\section{Permutation Representations}
+\underline{Assume}: $A \not = \emptyset$, $G$ is a group, and $\varphi$ a homomorphism, and $G$ acts on $A$.
+\begin{defn}[Permutation Representation]
+	Any $\varphi: G \to {S}_{A}$. \\
+	i.e. Any homomorphism of a group $G$ into the symmetric group ${S}_{A}$.
+\end{defn}
+An action of $G$ on $A$ \textit{induces} the associated permutation representation of $G$. It's similar to the matrix representation of a linear transformation.

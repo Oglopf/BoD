@@ -1,0 +1,26 @@
+\chapter{Topology}
+\underline{Assume}: Collections scripted $\mathscr{X}$. \\
+\\
+In topology \textit{collection} is used instead of \textit{set}. Usually they are synonymous, but sometimes \textit{collection} is used when discussing \textit{a set of sets} specifically. \\
+\begin{defn}[Collection $\mathscr{X}$]
+	A set whose elements are sets.
+\end{defn}
+\begin{defn}[Topology]
+	A collection $\mathscr{T}$ of subsets $X$ satisfying:
+	\begin{enumerate}
+		\item $\emptyset, X \in \mathscr{T}$.
+		\item For any subcollection X of $\mathscr{T}$ the union $\bigcup$ of the elements of X is in $\mathscr{T}$.
+		\[\forall X \subset \mathscr{T} \; \; \bigcup_{x \in X} x \in \mathscr{T} \]
+		\item For any finite subcollection X of $\mathscr{T}$ the intersection $\bigcap$ of the elements of X is in $\mathscr{T}$.
+		\[ \forall {X}^{n} \subset \mathscr{T} \; \; \bigcap_{x \in {X}^{n} } x \in \mathscr{T} \]
+	\end{enumerate}
+\end{defn}
+\begin{defn}[Topological Space]
+	An ordered pair denoted $\mathscr{A} = (X, \mathscr{T})$. \\
+	i.e. A set $X$ for which a topology $\mathscr{T}$ has been specified.
+\end{defn}
+\begin{defn}[Open Set $U$]
+	For $\mathscr{A} = (X, \mathscr{T})$;  $\; \; U \subset X$ and $U \in \mathscr{T}$. \\
+	i.e. the subset U is a subset of the set and the subset is in the topology.
+\end{defn}
+In the literature, instead of $\mathscr{A} = (X, \mathscr{T})$ they will simply drop the ordered pair and refer to the set symbol $X$, similar to group theory etc convention.
